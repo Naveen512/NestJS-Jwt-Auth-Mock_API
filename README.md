@@ -73,3 +73,45 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
   Nest is [MIT licensed](LICENSE).
+
+## Step 1
+Install NestJS(which is node application) CLI into the local machine
+
+```bash
+$ npm i -g @nestjs/cli
+
+```
+
+## Step 2
+In project root folder install all packages
+
+```bash
+$ npm install
+```
+
+## step 3
+Run application
+
+```bash
+$ npm run start:dev
+```
+
+## Login endpoint
+```
+http://localhost:3000/auth/login
+
+# payload
+
+```json
+{
+  "username": test,
+  "password":"1234"
+}
+```
+
+```
+
+
+
+
+
