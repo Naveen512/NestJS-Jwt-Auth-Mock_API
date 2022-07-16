@@ -97,17 +97,15 @@ $ npm run start:dev
 ```
 
 ## Login endpoint
-```
+```bash
 http://localhost:3000/auth/login
 
 # payload
 
-```json
 {
-  "username": test,
+  "username": "test",
   "password":"1234"
 }
-```
 
 ```
 
