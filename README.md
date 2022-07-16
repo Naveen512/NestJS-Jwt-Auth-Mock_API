@@ -43,10 +43,10 @@ For testing purpose to expire the Jwt token we can set the expiration at
 # src/auth/aut.module.ts
 `JwtModule.register({
       secret: 'secret',
-      signOptions: { expiresIn: '6000s' },
+      signOptions: { expiresIn: '1800s' },
 })`
 
-you can change value at 'expiresIn', default set {60000 * 30}--> 30mins
+you can change value at 'expiresIn', default set {1800 seconds}--> 30mins
 
 ```
 

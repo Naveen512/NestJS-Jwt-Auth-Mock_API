@@ -13,7 +13,7 @@ import {JwtRefreshTokenStrategy} from './jwt.refreshtoken.strategy';
     PassportModule,
     JwtModule.register({
       secret: 'secret',
-      signOptions: { expiresIn: 60000 * 30 },
+      signOptions: { expiresIn: '1800s' },
     }),
   ],
   providers: [AuthService, LocalStrategy, JwtStrategy, JwtRefreshTokenStrategy],
