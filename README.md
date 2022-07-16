@@ -39,6 +39,15 @@ http://localhost:3000/auth/login
 "refresh_token":""
 }
 
+For testing purpose to expire the Jwt token we can set the expiration at
+# src/auth/aut.module.ts
+`JwtModule.register({
+      secret: 'secret',
+      signOptions: { expiresIn: '6000s' },
+})`
+
+you can change value at 'expiresIn', default set {60000 * 30}--> 30mins
+
 ```
 
 ## Refresh token endpoint
