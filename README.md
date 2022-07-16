@@ -52,7 +52,7 @@ you can change value at 'expiresIn', default set {60000 * 30}--> 30mins
 
 ## Refresh token endpoint
 ```bash
-http://localhost:3000/auth/login
+http://localhost:3000/auth/refreshtoken
 
 # payload
 
