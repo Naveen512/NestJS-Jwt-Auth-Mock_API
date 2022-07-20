@@ -2,6 +2,7 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import {Injectable, UnauthorizedException, Body} from '@nestjs/common';
 import {UsersService} from '../users/users.service';
+import { use } from 'passport';
 
 @Injectable()
 export class JwtRefreshTokenStrategy extends PassportStrategy(Strategy,"jwt-refreshtoken") {
@@ -20,6 +21,6 @@ export class JwtRefreshTokenStrategy extends PassportStrategy(Strategy,"jwt-refr
     if(!user){
         throw new UnauthorizedException();
     }
-    return { userId: payload.sub, username: payload.username };
+    return { userId: payload.sub, username: payload.username, email:user.email };
   }
 }
